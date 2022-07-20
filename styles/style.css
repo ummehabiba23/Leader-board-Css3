@@ -1,0 +1,160 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Gentium+Book+Plus&family=Gulzar&family=Poppins:wght@400;500&family=Teko:wght@300;400&display=swap');
+
+/* font style */
+
+
+body {
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Gentium Book Plus', serif;
+    font-family: 'Gulzar', serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Teko', sans-serif;
+    background-color: #F3F1FF;
+}
+
+.container {
+    background-color: #FFFFFF;
+    width: 870px;
+    padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+/* top players style */
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+    margin-bottom: 30px;
+}
+
+.section-title {
+    color: #562EFF;
+    margin-top: 3px;
+
+}
+
+.player {
+    display: flex;
+    align-items: center;
+
+}
+
+.player img {
+    width: 56px;
+    height: 56px;
+}
+
+.player-name {
+    margin: 16px;
+}
+
+hr {
+    border: 1px solid #D1D1D1;
+    margin-bottom: 27px;
+
+}
+
+.thambnail img {
+    width: 177px;
+    height: 117px;
+
+}
+
+.blogs {
+    display: flex;
+
+}
+
+.blog {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+}
+
+
+.blog-info {
+    margin-left: 16px;
+}
+
+.blog-author {
+    color: #9F9F9F;
+    font-size: 16px;
+}
+
+.blog-author a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.fa-star.filled {
+    color: #FFC014;
+}
+
+.fa-star.empty {
+    color: #AEAEAE;
+}
+
+.fa-star {
+    font-size: 12px;
+}
+
+.coures. courses-banner img {
+    height: 110px;
+    width: 224px;
+}
+
+.course-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+
+}
+
+.coures-banner img {
+    height: 85px;
+}
+
+/* media quaries for mobile devices */
+@media only screen and (max-width:688px) {
+
+    .players,
+    .blog {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .player {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container {
+        width: 100%
+    }
+
+}
